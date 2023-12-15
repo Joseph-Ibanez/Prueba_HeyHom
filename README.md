@@ -51,3 +51,45 @@ Y obtendremos una respuesta del siguiente tipo
     "available": true
   },
 ]
+```
+
+Para devolver una sola propiedad, se puede hacer mediante el siguiente Request, modificando el 1 por el número de propiedad que se desee:
+```bash
+curl http://localhost:8000/api/properties/1/
+```
+Y la respuesta sería del tipo:
+```json
+ {
+    "id": 1,
+    "title": "Departamento bonito",
+    "description": "Un departamente hermoso y espacioso en un lugar cotizado",
+    "price": 160000.00,
+    "location": "Centro de la ciudad",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1000,
+    "available": true
+  }
+```
+Podemos ver que aquí se llamó solo a un elemento del arreglo que llamamos en el request anterior. 
+
+Mediante una petición **POST** podemos crear una nueva propiedad:
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Nueva Casa", "description": "Casa nueva con arquitectura moderna", "price": 250000.00, "location": "Afueras de la ciudad", "property_type": "HOS", "bedrooms": 4, "bathrooms": 3, "square_feet": 2000, "available": true}' http://localhost:8000/api/properties/
+```
+Y obtenemos una respuesta del tipo:
+```json
+{
+    "id": 2,
+    "title": "Nueva Casa",
+    "description": "Casa nueva con arquitectura moderna",
+    "price": 250000.00,
+    "location": "Afueras de la ciudad",
+    "property_type": "HOS",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "square_feet": 2000,
+    "available": true
+}
+```
