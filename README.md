@@ -30,5 +30,5 @@ py manage.py runserver
 ```
 Visitando http://localhost:8000/api/properties tendremos la lista de propiedades.
 
-##Ejemplos de API Requests and Responses
+## Ejemplos de API Requests and Responses
 
