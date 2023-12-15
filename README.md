@@ -20,4 +20,13 @@ Una vez dentro del entorno virtual, ejecutamos el siguiente comando:
 pip install -r requirements.txt
 ```
 Este comando instalará todas las dependencias necesarias para ejecutar la API.
+Corremos las migraciones para que al correr el servidor éstas se vean.
+```bash
+py manage.py migrate
+```
+Y finalmente corremos el proyecto mediante
+```bash
+py manage.py runserver
+```
+Visitando http://localhost:8000/api/properties tendremos la lista de propiedades.
 
