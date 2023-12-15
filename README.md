@@ -31,4 +31,23 @@ py manage.py runserver
 Visitando http://localhost:8000/api/properties tendremos la lista de propiedades.
 
 ## Ejemplos de API Requests and Responses
-
+Un ejemplo de request (estando en el entorno virtual), se da mediante:
+```bash
+curl http://localhost:8000/api/properties/
+```
+Y obtendremos una respuesta del siguiente tipo
+```json
+[
+  {
+    "id": 1,
+    "title": "Departamento bonito",
+    "description": "Un departamente hermoso y espacioso en un lugar cotizado",
+    "price": 160000.00,
+    "location": "Centro de la ciudad",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1000,
+    "available": true
+  },
+]
