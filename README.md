@@ -34,7 +34,9 @@ Visitando http://localhost:8000/api/properties tendremos la lista de propiedades
 ## Ejemplos de API Requests and Responses
 Para **listar todas las propiedades** en la base de datos, es necesario escribir en el navegador, 
 con servidor encendido, lo siguiente:
+
 http://localhost:8000/api/properties/listing/
+
 Y obtendremos una respuesta del siguiente tipo
 ```json
 [
@@ -66,7 +68,9 @@ Y obtendremos una respuesta del siguiente tipo
 ```
 
 Para **devolver una sola propiedad**, se puede hacer mediante el siguiente Request, mediante el id que se desee:
+
 http://localhost:8000/api/properties/id_propiedad/retrieve_property/
+
 Usando de ejemplo el id = 6, la respuesta sería del tipo:
 ```json
  {
@@ -85,14 +89,20 @@ Usando de ejemplo el id = 6, la respuesta sería del tipo:
 Podemos ver que aquí se llamó solo a un elemento del arreglo que llamamos en el request anterior. 
 
 Para **crear** una nueva propiedad debemos escribir:
+
 http://localhost:8000/api/properties/create/
+
 Y nos arrojará en el navegador las características a rellenar para la creación de la nueva propiedad. 
 
 Para **actualizar** una propiedad debemos de escribir:
+
 http://localhost:8000/api/properties/id_propiedad/update/
+
 Donde nos aparecerán todos los campos para actualizar la propiedad terminando con un POST al final de la página. 
 
 Por último para **eliminar** una propiedad es necesario escribir:
+
 http://localhost:8000/api/properties/id_propiedad/delete/
+
 Y nos aparecerá una página donde debemos de elegir **DELETE** y nos lanzará una ventana donde confirmaremos que queremos eliminar esa propiedad. 
 (Aquí el único problema es que no he logrado que en la ventana aparezcan los campos de la propiedad a eliminar, por lo que debemos elegir cuidadosamente el id al momento de escribir el url).
