@@ -22,6 +22,7 @@ pip install -r requirements.txt
 Este comando instalará todas las dependencias necesarias para ejecutar la API.
 Corremos las migraciones para que al correr el servidor éstas se vean.
 ```bash
+py manage.py makemigrations
 py manage.py migrate
 ```
 Y finalmente corremos el proyecto mediante
