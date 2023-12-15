@@ -53,7 +53,7 @@ Y obtendremos una respuesta del siguiente tipo
 ]
 ```
 
-Para devolver una sola propiedad, se puede hacer mediante el siguiente Request, modificando el 1 por el número de propiedad que se desee:
+Para devolver una sola propiedad, se puede hacer mediante el siguiente Request, modificando el 1 por el número de id que se desee:
 ```bash
 curl http://localhost:8000/api/properties/1/
 ```
