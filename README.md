@@ -105,4 +105,3 @@ Por último para **eliminar** una propiedad es necesario escribir:
 http://localhost:8000/api/properties/id_propiedad/delete/
 
 Y nos aparecerá una página donde debemos de elegir **DELETE** y nos lanzará una ventana donde confirmaremos que queremos eliminar esa propiedad. 
-(Aquí el único problema es que no he logrado que en la ventana aparezcan los campos de la propiedad a eliminar, por lo que debemos elegir cuidadosamente el id al momento de escribir el url).
